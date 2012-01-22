@@ -70,6 +70,7 @@ body {
     @extend .group;
     margin-left: $pad-min;
     margin-right: $pad-min;
+    text-shadow: #fff 0 -1px 0;
     @media only screen and (min-width: 480px) {
       margin-left: $pad-narrow;
       margin-right: $pad-narrow;
@@ -87,6 +88,20 @@ body {
     font-size: $header-font-size;
     padding-top: $header-padding-top;
     padding-bottom: $header-padding-bottom;
+  }
+  > nav {
+    ul.main-navigation li a {
+      font-family: $header-title-font-family;
+      font-weight: bold;
+      text-shadow: #fff 0 -1px 0;
+    }
+  }
+  > footer {
+    text-shadow: #fff 0 -1px 0;
+    a {
+      padding-bottom: 0.2em;
+      border-bottom: 1px dotted #989898;
+    }
   }
 }
 
