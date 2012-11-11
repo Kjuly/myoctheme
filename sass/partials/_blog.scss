@@ -9,20 +9,20 @@ article {
         &:hover { text-decoration: none; } }
     }
     p {
-      font-size: .9em;
+      font-size: 1em;
       color: $text-color-light;
       margin: 0;
       &.meta {
         @extend .sans;
         text-transform: uppercase;
-        margin: 0 0 -2.95em -5.35em;
+        margin: 0 0 -2.8em -5.3em;
         width: 4em;
         color: $text-color;
         font-family: $header-title-font-family;
         text-align: right;
         line-height: 1.2em;
         padding-right: 0.3em;
-        border-right: 3px solid #000;
+        border-right: 5px solid #68afff;
       }
     }
     @media only screen and (min-width: 768px) {

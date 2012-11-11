@@ -8,12 +8,12 @@
 
 {% if has_date != '0' %}
 {% capture time %}
-<time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}>{{ date | date: "%b %d" }}<br/>{{ date | date: "%Y" }}</time>
+<time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}><span style="color:#68afff">{{ date | date: "%m" }}</span>{{ date | date: "%d" }}<br/>{{ date | date: "%Y" }}</time>
 {% endcapture %}
 {% endif %}
 
 {% if was_updated != '0' %}
 {% capture updated %}
-<time datetime="{{ updated | datetime | date_to_xmlschema }}" class="updated">{{ updated | date: "%b %d" }} - {{ updated | date: "%Y" }}</time>
+<time datetime="{{ updated | datetime | date_to_xmlschema }}" class="updated">{{ updated | date: "%m%d" }} - {{ updated | date: "%Y" }}</time>
 {% endcapture %}
 {% else %}{% assign updated = false %}{% endif %}

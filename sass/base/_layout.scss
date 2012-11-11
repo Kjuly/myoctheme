@@ -1,4 +1,4 @@
-$max-width: 512px !default;
+$max-width: 680px !default;
 
 // Padding used for layout margins
 $pad-min: 16px !default;
@@ -49,6 +49,11 @@ body {
   max-width: $max-width;
   position: relative;
   margin: 0 auto;
+
+  > header, > nav, > footer, #content {
+    padding: 0 3em;
+  }
+
   > header, > nav, > footer, #content > article, #content > div > article, #content > div > section {
     @extend .group;
     padding-left: $pad-min;
@@ -106,9 +111,13 @@ body {
 }
 
 #content {
-  //overflow: hidden;
-  z-index: 999;
-  > div, > article { width: 100%; }
+  overflow: hidden;
+  //z-index: 999;
+  //padding: 0 3em;
+  > div, > article {
+    background: #fff;
+    width: 100%;
+  }
 }
 
 aside.sidebar {
