@@ -107,6 +107,7 @@ body {
 
 #content {
   //overflow: hidden;
+  z-index: 999;
   > div, > article { width: 100%; }
 }
 
