@@ -18,6 +18,9 @@
 
 $vcard-dt-width: 5em;
 $vcard-dd-margin-from-dt: $vcard-dt-width;
+.vcard {
+  padding-bottom: 6em;
+}
 .vcard dt {
 	float: left;
 	padding-right: .5em;
