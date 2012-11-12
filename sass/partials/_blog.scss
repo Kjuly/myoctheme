@@ -1,5 +1,5 @@
 article {
-  padding-top: 1em;
+  padding-top: 1.5em;
   a { @extend .force-wrap; }
   header {
     position: relative;
@@ -23,6 +23,8 @@ article {
         line-height: 1.2em;
         padding-right: 0.3em;
         border-right: 5px solid #68afff;
+      }
+      .tag {
       }
     }
     @media only screen and (min-width: 768px) {
@@ -70,10 +72,12 @@ article {
   }
   span.meta { color: $text-color-light; }
   > footer {
-    padding-bottom: 2.5em;
-    margin-top: 2em;
+	  border-top: 1px dashed $nav-border;
+    padding-bottom: 9em;
+    margin-top: 6em;
     @extend .sans;
     p.meta {
+      margin-top: 1em;
       margin-bottom: .8em;
       font-size: .85em;
       clear: both;
@@ -89,6 +93,11 @@ article + article {
   .blog-index & {
   }
 }
+#content div {
+  article {
+    padding-top: 6em;
+  }
+}
 #content .blog-index {
   article {
 	  padding-top: 3em;
@@ -97,7 +106,7 @@ article + article {
 	  //border-top: 1px solid #fff;
   }
   article:first-child {
-    padding-top: 1em;
+    padding-top: 6em;
     border-top: none;
   }
   article header { background: none; }
@@ -135,7 +144,7 @@ article + article {
   text-align: center;
   font-size: .95em;
   position: relative;
-  padding: {top: 3.5em; bottom: 3.5em; left: 3em; right: 3em; }
+  padding: {top: 6em; bottom: 6em; left: 3em; right: 3em; }
   //border-top: 1px solid #fff;
   a {
     text-decoration: none;
