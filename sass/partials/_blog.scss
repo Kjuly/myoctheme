@@ -91,10 +91,10 @@ article + article {
 }
 #content .blog-index {
   article {
-	padding-top: 3em;
-	padding-bottom: 1.5em;
-	border-bottom: 1px solid $nav-border;
-	border-top: 1px solid #fff;
+	  padding-top: 3em;
+	  padding-bottom: 6em;
+	  border-bottom: 1px dashed $nav-border;
+	  //border-top: 1px solid #fff;
   }
   article:first-child {
     padding-top: 1em;
@@ -129,14 +129,14 @@ article + article {
 }
 
 #content div.pagination {
-  width: 100%;
-  margin: 0;
+  width: auto;
+  margin: 0 3em;
   padding: 0;
   text-align: center;
   font-size: .95em;
   position: relative;
-  padding: {top: 1.5em; bottom: 1.5em;}
-  border-top: 1px solid #fff;
+  padding: {top: 3.5em; bottom: 3.5em; left: 3em; right: 3em; }
+  //border-top: 1px solid #fff;
   a {
     text-decoration: none;
     color: $text-color-light;

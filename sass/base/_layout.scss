@@ -1,4 +1,4 @@
-$max-width: 680px !default;
+$max-width: 720px !default;
 
 // Padding used for layout margins
 $pad-min: 16px !default;
@@ -50,8 +50,12 @@ body {
   position: relative;
   margin: 0 auto;
 
-  > header, > nav, > footer, #content {
+  #content {
     padding: 0 3em;
+  }
+
+  > nav, > footer {
+    margin: 0 3em;
   }
 
   > header, > nav, > footer, #content > article, #content > div > article, #content > div > section {
@@ -75,7 +79,7 @@ body {
     @extend .group;
     margin-left: $pad-min;
     margin-right: $pad-min;
-    text-shadow: #fff 0 -1px 0;
+    //text-shadow: #fff 0 -1px 0;
     @media only screen and (min-width: 480px) {
       margin-left: $pad-narrow;
       margin-right: $pad-narrow;
@@ -105,7 +109,6 @@ body {
     text-shadow: #fff 0 -1px 0;
     a {
       padding-bottom: 0.2em;
-      border-bottom: 1px dotted #989898;
     }
   }
 }
