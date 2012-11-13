@@ -8,7 +8,7 @@
 
 {% if has_date != '0' %}
 {% capture time %}
-<time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}><span style="color:#68afff">{{ date | date: "%m" }}</span>{{ date | date: "%d" }}<br/>{{ date | date: "%Y" }}</time>
+<time datetime="{{ date | datetime | date_to_xmlschema }}" pubdate{% if updated %} data-updated="true"{% endif %}>{{ date | date: "%Y" }}-<span style="color:#68afff">{{ date | date: "%m" }}</span>-{{ date | date: "%d" }}</time>
 {% endcapture %}
 {% endif %}
 

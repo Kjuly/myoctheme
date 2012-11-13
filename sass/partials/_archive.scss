@@ -9,17 +9,28 @@
     &:last-child {
       background: none;
     }
-    footer { padding: 0; margin: 0;}
+    footer {
+      padding: 0; margin: 0;
+      span.categories a.category {
+        font-family: $header-title-font-family;
+      }
+    }
   }
   h1 { color: $text-color; margin-bottom: .3em; }
-  h2 { display: none; }
+  h2 {
+    display: none;
+    font-size: 2.5em;
+  }
   h1 {
     font-size: 1.5em;
+    line-height: 1.5em;
     a {
       @include hover-link;
       color: inherit;
       &:hover { color: $link-color-hover; }
       font-weight: normal;
+      //font-size: 1em;
+      //line-height: 1em;
       display: inline-block;
     }
   }
@@ -30,10 +41,14 @@
   color: $text-color-light;
   .entry-content { display: none; }
   time {
-    font-size: .9em;
-    line-height: 1.2em;
+    font-family: $header-title-font-family;
+    font-size: 1em;
+    line-height: 1em;
     .month, .day { display: inline-block; }
-    .month { text-transform: uppercase; }
+    .month {
+      color: #68afff;
+      //text-transform: uppercase;
+    }
   }
   p { margin-bottom: 1em; }
   &, .entry-content { a { @include link-colors(inherit, $link-color-hover); }}
